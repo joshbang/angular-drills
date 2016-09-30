@@ -1,6 +1,15 @@
-<html>
-	<body>
-	
+<html ng-app="app1">
+<link rel="stylesheet" href="styles.css" media="screen" title="no title">
+	<body ng-controller="mainCtrl">
+
+		<input ng-model="newName" type="text" name="name" value="">
+		<br>
+		<button ng-click="changeName(newName)">Change Text</button>
+		<div class="tester">
+			{{name}}
+		</div>
+
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
